@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Light Switch</title>
+<!-- including jQuery from the google cdn -->
+<script type="text/javascript"  src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function toggleSwitch(switchID,switchState) {
+    var url = "switch.php";
+    $.post(url, {stateVar: switchState, idVar: switchID} ,function(data) {
+       $("#sw" + switchID ).html(data).show();
+    });
+}
+//-->
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="new"><p>Basement Transiever</p>
+<div id="sw1">
+<div class="map_image" style="background-image: url('img/none.png');">
+    <a class="map_link" id="map_link_1" title="On" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('1','on');">On</a>
+    <a class="map_link" id="map_link_0" title="Off" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('1','off');">Off</a>
+</div></div></div>
+
+<div class="left"><p>Switch 2</p>
+<div id="sw2">
+<div class="map_image" style="background-image: url('img/none.png');">
+    <a class="map_link" id="map_link_1" title="On" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('2','on');">On</a>
+    <a class="map_link" id="map_link_0" title="Off" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('2','off');">Off</a>
+</div></div></div>
+
+<div class="new"><p>Switch 3</p>
+<div id="sw3">
+<div class="map_image" style="background-image: url('img/none.png');">
+    <a class="map_link" id="map_link_1" title="On" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('3','on');">On</a>
+    <a class="map_link" id="map_link_0" title="Off" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('3','off');">Off</a>
+</div></div></div>
+
+<div class="left"><p>Front Steps</p>
+<div id="sw4">
+<div class="map_image" style="background-image: url('img/none.png');">
+    <a class="map_link" id="map_link_1" title="On" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('4','on');">On</a>
+    <a class="map_link" id="map_link_0" title="Off" href="#" onClick="return false" onmousedown="javascript:toggleSwitch('4','off');">Off</a>
+</div></div></div>
+</body>
+</html>

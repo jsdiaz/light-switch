@@ -1,0 +1,51 @@
+p {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: lighter; margin: 0; text-align: center; }
+
+.map_image {
+	display: block;
+	width: 166px;
+	height: 96px;
+	position: relative;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.map_image .map_link {
+	display: block;
+	position: absolute;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+.map_image #map_link_0 {
+	width: 83px;
+	height: 96px;
+	top: 1px;
+	left: 83px;
+}
+
+.map_image #map_link_1 {
+	width: 83px;
+	height: 96px;
+	top: 1px;
+	left: 1px;
+}
+
+.left { float: left; }
+.new { float: left; clear: both; }
+
+/*------------------------------------*\
+    $IPHONE
+\*------------------------------------*/
+@media screen and (max-device-width: 480px){
+    body{
+        -webkit-text-size-adjust:none;
+        font-family:Helvetica, Arial, Verdana, sans-serif;
+        padding:5px;
+        width: 332px;
+    }
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+}
